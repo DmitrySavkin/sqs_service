@@ -1,4 +1,22 @@
-queue:
-  first-queue: queue-1
-  secondQueue: queue-2
-
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    show-sql: true
+  h2:
+    console:
+      enabled:  true
+cloud:
+  aws:
+    region:
+      static:
+      auto: false
+    stack:
+      auto: false
+    credentials:
+      access-key:
+      secret-key:
+    end-point:
+      uri:
